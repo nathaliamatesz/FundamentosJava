@@ -39,10 +39,12 @@ public class Medidas {
                 area = calcularAreaDoCirculo();
                break;
             default:
-                throw new IllegalStateException("Valor inválido. Tente novamente. " + opcao);
+                System.out.println("Opção inválida. Tente novamente. ");
 
         }
-        System.out.println("A área é de " + area + "m2" );
+        if (area > 0) {
+            System.out.println("A área é de " + area + "m2" );
+        }
     }
 
     public static int calcularAreaDoQuadrado(){
